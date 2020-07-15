@@ -1,0 +1,231 @@
+/* a media significa que todo css vai mudar para o código abaixo quando redimensionarmos a janela*/
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+/* ---------------------------------------------------------- */
+    #page-search-results main .cards {
+        grid-template-columns: 1fr;  
+    }
+
+/* ----------------------modal------------------------------------ */
+    #modal .content {
+
+        height: 300px;
+        width: 300px;
+    
+    }
+
+    #modal .header h1 {
+        color: white;
+        font-size: 28px;
+    
+        line-height: 42px;
+    }
+
+    @media(max-width: 360px){
+
+        #modal .header h1 {
+        
+            font-size: 20px;
+    
+        }
+        #modal form {
+        
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #modal form label {
+        
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #modal form search field {
+            width: 300px;
+        }
+        
+        #modal form input {
+            height: 50px;
+            width: 200px;
+        
+        
+        }
+        #modal button {
+            height: 50px;
+            width: 50px;
+        
+        }
+
+
+    }
+
+
+    
+   
+
+   
+}
+
+/* ---------------------------------------------------------- */
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 40vw;
+    }
+}
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+/* --------------------------------- */ /* create-point */
+
+@media(max-width: 660px){
+
+    #page-create-point {
+        
+        width: 70%;
+        min-width: 400px;
+        align-items: center; 
+        justify-content: center;
+    }
+    #page-create-point header {
+        
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    #page-create-point header a{
+        
+        margin-top: 40px;
+    
+    }
+
+    
+    #page-create-point form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #page-create-point form .field {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+
+    #page-create-point form .field-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-create-point form input,
+    form select {
+        background-color: #f0f0f9;
+    
+        border: 0;
+        padding: 16px 24px;
+        font-size: 16px;
+    
+        border-radius: 8px;
+    
+       /* outline: none; /* linha preta da borda quando seleciona*/
+    
+        outline-width: 3px;
+    
+    }
+
+    /* estiliza apenas o segundo campo que está em linha*/
+form .field-group .field + .field {
+    margin-left: 0px;
+}
+
+#page-create-point form button {
+    width: 220px;
+    height: 56px;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* legenda do form grid "itens de cotela" */
+#page-create-point fieldset legend{
+    display: flex;
+    margin: 15px auto;
+}
+
+
+/* ------------------create-point-------------------------------------- */
+
+.items-grid{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.items-grid li {
+
+    height: 180px;
+    width: 190px;
+    margin-top: 20px;
+
+}
+
+/* ------------------------------------------------------------------ */
+
+#page-search-results header {
+    align-items: center;
+    flex-direction: column;
+    
+}
+#page-search-results header a {
+    margin-top: 40px;
+    
+}
+
+#page-search-results main .cards {
+    grid-template-columns: 1fr;  
+}
+
+
+
+
+/* ------------------------create-point-------------------------------------- */
+
+}
+
+@media(max-width: 798px){
+    fieldset legend{
+        display: flex;
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+    fieldset legend span{
+        margin-top: 10px;
+    }
+}

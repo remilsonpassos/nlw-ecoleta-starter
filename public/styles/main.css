@@ -1,0 +1,38 @@
+/* determina que as vatiáveis de cor abaixo irão ser usadas em muitas ocasioes durante o código*/
+:root {
+    --title-color: #6940af;
+    --primary-color: #34cb79;
+    --backgcolor: #f0f0f5;
+}
+
+ html {
+     font-family: Roboto, sans-serif;
+ }
+
+ /*todo o corpo terá um padrão de cor e escrita determinado abaixo*/
+ body{
+     background: #f0f0f5;
+     -webkit-font-smoothing: antialiased;
+ }
+
+    /* o comando abaixo determina que todos o seguimentos de link da tag"a" serão removidos o sublinhado 
+    que caracteriza o link*/
+ a{
+    text-decoration: none;
+}
+
+/* significa que todo h1 ou tipo de entrada de texto vai mudar para fonte padrão escolhida abaixo*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+}
+
+/* O asteristico abaixo sinaliza que toda a pagina vai se adequar ao comando global abaixo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ 
